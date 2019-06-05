@@ -84,7 +84,11 @@ pipeline {
             }	
         }		
 		
-		
+       stage('Add servicios tpv ') {
+            steps {
+                sh "cd /BuildScript && ./alta_servicio.sh "		
+            }	
+        }		
 
     }
 }
